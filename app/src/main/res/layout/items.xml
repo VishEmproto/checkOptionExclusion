@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginLeft="20dp"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:text="Hello"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_below="@id/title"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/optionsRecycler"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+       </androidx.recyclerview.widget.RecyclerView>
+    </RadioGroup>
+</RelativeLayout>
